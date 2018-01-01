@@ -5,6 +5,7 @@ $(document).ready(function () {
 });
 
 /**Activación de boton2 signup*/
+$(".view2").hide();
 $("#btn2").click(function () {
   $(".view2").show();
   $(".view1").hide();

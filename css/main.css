@@ -93,35 +93,29 @@ height: 50%;
 .phonein{
   padding-left: 2%;
   padding-right: 0;
-  width: 420px;
-  margin-top: 25px;
 }
 .inpc{
   padding-left: 0;
   padding-right: 0;
-  width: 320px;
-  margin-left: 200px;
-  margin-top: 50px;
 }
 .txtsend{
   font-size: 1.8rem;
   padding-top:2%;
   text-align: center;
+  margin-top: 5%;
 }
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
   background-color: gray;
   color:#fff;
-  width: 400px;
-  font-size: 25px;
-  margin-left: 480px;
+  width: auto;
 }
 .btn-block{
   margin-top: 10%;
   background-color: #FF00BF;
   color:#fff;
-  width: 400px;
-  margin-left: 480px;
+  width: auto;
 }
+
 .btn:hover {
   color: #fff;
   text-decoration: none;
