@@ -5,6 +5,7 @@ $(document).ready(function () {
 });
 
 /**Activación de boton2 signup*/
+$(".view3").hide();
 $(".view2").hide();
 $("#btn2").click(function () {
   $(".view2").show();
@@ -38,3 +39,27 @@ $(function () {
 });
 
 /**Tercera vista*/
+$(".view3").hide();
+$('.code').click(function(e) {
+  var yourcode = (Math.floor(Math.random() * 900) + 100);
+  alert("Tu" + " " + "código" + " " + "es" + " " + "LAB" + "-" + yourcode);
+  $(".view3").show();
+  $(".view2").hide();
+  $("#partitioned").on("keyup", function() {
+  $(".next2").prop("disabled", true);
+  if( $("#partitioned").val() == (yourcode)) {
+  $(".next2").prop("disabled", false);
+ }
+});
+});
+/**Función del icono atrás*/
+$(".backicotwo").click(function () {
+  $(".view2").show();
+  $(".view3").hide();
+});
+$(".next2").click(function(){
+  $(".view3").hide();
+  $(".view2").hide();
+});
+
+/**Cuarta vista*/
