@@ -102,12 +102,14 @@ height: 50%;
   font-size: 1.8rem;
   padding-top:2%;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
   background-color: gray;
   color:#fff;
-  width: auto;
+  width: 280px;
+  margin:auto;
+  margin-top: 80px;
 }
 .btn-block{
   margin-top: 10%;
