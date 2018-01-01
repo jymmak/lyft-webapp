@@ -21,7 +21,7 @@ body{
   overflow: auto;
   z-index: 3;
 }
-.tlogo {
+.tlogo{
 width: 50%;
 margin-left: 25%;
 margin-top: 20%;
@@ -104,7 +104,7 @@ height: 50%;
   text-align: center;
   margin-top: 3%;
 }
-.next1, .next2{
+.next1, .next2, .next3{
   width: 280px;
   margin:auto;
   margin-top: 80px;
@@ -161,4 +161,46 @@ height: 50%;
   margin-top: 5%;
 }
 
-/*Tercera Vista*/
+/*Cuarta Vista*/
+.back3{
+  padding-left: 0;
+  padding-top: 3%;
+  }
+.fname,.lname,.mail{
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+.checkbox{
+  padding-left: 5%;
+}
+
+/*Quinta Vista*/
+.view5{
+  background: #5b0572; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #5b0572 0%, #ad1283 64%, #de47ac 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #5b0572 0%,#ad1283 64%,#de47ac 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #5b0572 0%,#ad1283 64%,#de47ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b0572', endColorstr='#de47ac',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  z-index: 3;
+}
+.logof{
+  width: 40%;
+  margin-left: 25%;
+  margin-top: 10%;
+  height: 40%;
+  }
+
+.checkb{
+  padding-top: 25vw;
+}
+.sq{
+  font-size: 12rem;
+  text-align: center;
+}
+

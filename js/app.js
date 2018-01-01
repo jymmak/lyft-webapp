@@ -1,10 +1,12 @@
 $(document).ready(function () {
-
+  $(".view5").hide();
   /**Splash*/
   $('.title').delay(2000).fadeOut("slow");
-});
+
 
 /**Activación de boton2 signup*/
+$(".view5").hide();
+$(".view4").hide();
 $(".view3").hide();
 $(".view2").hide();
 $("#btn2").click(function () {
@@ -60,6 +62,28 @@ $(".backicotwo").click(function () {
 $(".next2").click(function(){
   $(".view3").hide();
   $(".view2").hide();
+  $(".view4").show();
 });
 
 /**Cuarta vista*/
+$(".back3").click(function(){
+  $(".view4").hide();
+  $(".view3").show();
+  $(".view2").hide();
+  $(".view1").hide();
+});
+
+$(".checkbox").on("click", function() {
+  $(".next3").prop("disabled", false);
+});
+$(".next3").click(function(){
+  $(".view3").hide();
+  $(".view2").hide();
+  $(".view5").show();
+  $('.view5').delay(2000).fadeOut("slow");
+  $(".view4").hide();
+  $(".view3").hide();
+  $(".view2").hide();
+  $(".view1").show();
+});
+});
