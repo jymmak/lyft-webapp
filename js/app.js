@@ -30,7 +30,7 @@ $('#phonee').keyup(function () {
 }).trigger('keyup');
 $(function () {
   $('.phonee').keyup(function (e) {
-    if (this.value != '-')
+    if (this.value != '')
       while (isNaN(this.value))
         this.value = this.value.split('').reverse().join('').replace(/[\D]/i, '')
           .split('').reverse().join('');
@@ -39,6 +39,12 @@ $(function () {
       e.preventDefault();
     });
 });
+$('#countries a').click(changeFlag);
+function changeFlag(event) {
+  $('#selected-country img').attr('src', '../assets/images/flag-' + $(event.target).closest('a').attr('id') + '.png');
+  $('.phonein').val($(event.target).closest('a').attr('data-prefix'));
+}
+
 
 /**Tercera vista*/
 $(".view3").hide();
@@ -76,6 +82,7 @@ $(".back3").click(function(){
 $(".checkbox").on("click", function() {
   $(".next3").prop("disabled", false);
 });
+
 $(".next3").click(function(){
   $(".view3").hide();
   $(".view2").hide();

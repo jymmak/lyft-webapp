@@ -1,6 +1,7 @@
 * {
   margin:0;
   padding:0;
+  margin: 0 auto;
 }
 
 body{
@@ -85,19 +86,31 @@ height: 50%;
   text-align: center;
   font-size: 2rem;
 }
-.flag{
-	width: 25px;
-	height: 10px;
-	margin-right: 5px;
+#selected-country{
+  margin: 0 auto;
+  position: absolute;
+  padding: 7px 9px;
+}
+
+#selected-country img{
+  width: 40px;
+}
+.dropdown-menu {
+  min-width: auto;
+}
+
+.dropdown-menu img {
+  width: 40px;
 }
 .phonein{
-  padding-left: 2%;
+  padding-left: 11%;
   padding-right: 0;
+  margin: 0 auto;
+  width: 90%;
+  position:relative;
+  margin-left: 11%;
 }
-.inpc{
-  padding-left: 0;
-  padding-right: 0;
-}
+
 .txtsend{
   font-size: 1.8rem;
   padding-top:2%;

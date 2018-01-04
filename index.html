@@ -70,41 +70,52 @@
       </div>
       <hr>
       <div class="container">
-        <div class="row">
-          <div class="col-xs-offset-0 col-xs-5 inpc">
-            <select id="countries" class="form-control" />
-            <option value="Perú">
-              <a href="#">
-                <img class="flag" src="assets\images\peru.png" alt="">Lima</a>
-            </option>
-            <option value="Chile">
-              <a href="#">
-                <img class="flag" src="assets\images\chile.png" alt="">Santiago de Chile</a>
-            </option>
-            <option value="México">
-              <a href="#">
-                <img class="flag" src="assets\images\mexico.jpg" alt="">Ciudad de Mexico</a>
-            </option>
-            </select>
-          </div>
-          <div class="col-xs-offset-0 col-xs-7 phonein">
-            <div class="input-group phonein">
-              <span class="input-group-addon" id="basic-addon1">
-                <i class="fas fa-phone"></i>
-              </span>
-              <input type="text" id="phonee" maxlength="10" class="form-control phonee" placeholder="Teléfono" aria-describedby="basic-addon1">
+        <div class="col-xs-offset-0 col-xs-5">
+          <!-- Button group para seleccionar pais -->
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button id="selected-country" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img src="assets/images/flag-peru.png" alt="Country flag">
+                <span class="caret"></span>
+              </button>
+              <ul id="countries" class="dropdown-menu">
+                <li>
+                  <a href="#" id="per" data-prefix="51">
+                    <img src="assets/images/flag-peru.png" alt="Country flag">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="chil" data-prefix="56">
+                    <img src="assets/images/flag-chile.png" alt="Country flag">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="mex" data-prefix="52">
+                    <img src="assets/images/flag-mexico.png" alt="Country flag">
+                  </a>
+                </li>
             </div>
           </div>
         </div>
-        <div class="col-xs-12">
-          <p class="txtsend">We'll send a text to verify your phone</p>
-          <div class="text-center">
-            <button type="button submit" id='submitBtn' disabled='disabled' class="btn btn-lg btn-block code  next1 enableOnInput">
-              <strong>NEXT</strong>
-            </button>
+        <div class="col-xs-offset-0 col-xs-7 phonein">
+          <div class="input-group phonein">
+            <span class="input-group-addon" id="basic-addon1">
+              <i class="fas fa-phone"></i>
+            </span>
+            <input type="text" id="phonee" maxlength="10" class="form-control phonee" placeholder="Teléfono" aria-describedby="basic-addon1">
           </div>
         </div>
       </div>
+      <div class="col-xs-12">
+        <p class="txtsend">We'll send a text to verify your phone</p>
+        <div class="text-center">
+          <button type="button submit" id='submitBtn' disabled='disabled' class="btn btn-lg btn-block code  next1 enableOnInput">
+            <strong>NEXT</strong>
+          </button>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
